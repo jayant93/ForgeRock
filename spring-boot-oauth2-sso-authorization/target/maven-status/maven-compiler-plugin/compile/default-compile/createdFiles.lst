@@ -1,0 +1,5 @@
+com\cloudweb\oauth2\ResourceServerConfiguration.class
+com\cloudweb\controller\WebController.class
+com\cloudweb\OAuth2OpenamApplication.class
+com\cloudweb\config\SecurityConfiguration.class
+com\cloudweb\oauth2\AuthorizacionServerConfiguration.class

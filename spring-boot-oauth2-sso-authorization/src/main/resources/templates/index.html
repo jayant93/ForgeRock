@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<title>InfroDesk</title>
+</head>
+<body>
+	<h1>Welcome to InfoDesk</h1>
+	<p>
+		Try to access Public page <a th:href="@{/webpublic}">Click me..!!</a>
+	</p>
+	<p>
+		Try to access Private Page <a th:href="@{/webprivate}">Click
+			me..!!</a>
+	</p>
+	<p>
+		Try to access Administrator Page <a th:href="@{/webadmin}">Click
+			me..!!</a>
+	</p>
+	<div sec:authorize="isAuthenticated()">
+		Hello <span sec:authentication="name">someone</span>
+		<p>
+			<a th:href="@{/logout}">Logout</a>
+		</p>
+	</div>
+
+</body>
+</html>
